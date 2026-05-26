@@ -2,17 +2,17 @@
 //  Item.swift
 //  Loader
 //
-//  Created by banan on 26.05.2026.
-//
 
 import Foundation
 import SwiftData
 
 @Model
 final class Item {
+    var id: UUID
     var timestamp: Date
-    
-    init(timestamp: Date) {
+
+    init(timestamp: Date, id: UUID = UUID()) {
+        self.id = id
         self.timestamp = timestamp
     }
 }

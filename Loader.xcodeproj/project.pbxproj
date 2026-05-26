@@ -12,6 +12,11 @@
 		E5DE3F2E2FC5C73500E917AE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE3F2D2FC5C73500E917AE /* Item.swift */; };
 		E5DE3F302FC5C73800E917AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE3F2F2FC5C73800E917AE /* Assets.xcassets */; };
 		E5DE3F332FC5C73800E917AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE3F322FC5C73800E917AE /* Preview Assets.xcassets */; };
+		E5DE40102FC5D10000E917AE /* LoaderTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE400F2FC5D10000E917AE /* LoaderTheme.swift */; };
+		E5DE40122FC5D10000E917AE /* AuroraBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40112FC5D10000E917AE /* AuroraBackground.swift */; };
+		E5DE40142FC5D10000E917AE /* LoaderRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40132FC5D10000E917AE /* LoaderRingView.swift */; };
+		E5DE40162FC5D10000E917AE /* LoadItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40152FC5D10000E917AE /* LoadItemCard.swift */; };
+		E5DE40182FC5D12000E917AE /* Item+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40172FC5D12000E917AE /* Item+Progress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		E5DE3F2D2FC5C73500E917AE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E5DE3F2F2FC5C73800E917AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5DE3F322FC5C73800E917AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5DE400F2FC5D10000E917AE /* LoaderTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderTheme.swift; sourceTree = "<group>"; };
+		E5DE40112FC5D10000E917AE /* AuroraBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraBackground.swift; sourceTree = "<group>"; };
+		E5DE40132FC5D10000E917AE /* LoaderRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderRingView.swift; sourceTree = "<group>"; };
+		E5DE40152FC5D10000E917AE /* LoadItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadItemCard.swift; sourceTree = "<group>"; };
+		E5DE40172FC5D12000E917AE /* Item+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Progress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +60,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E5DE400D2FC5D10000E917AE /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE400F2FC5D10000E917AE /* LoaderTheme.swift */,
+				E5DE40112FC5D10000E917AE /* AuroraBackground.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		E5DE400E2FC5D10000E917AE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE40132FC5D10000E917AE /* LoaderRingView.swift */,
+				E5DE40152FC5D10000E917AE /* LoadItemCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E5DE3F282FC5C73500E917AE /* Loader */ = {
 			isa = PBXGroup;
 			children = (
 				E5DE3F292FC5C73500E917AE /* LoaderApp.swift */,
 				E5DE3F2B2FC5C73500E917AE /* ContentView.swift */,
 				E5DE3F2D2FC5C73500E917AE /* Item.swift */,
+				E5DE40172FC5D12000E917AE /* Item+Progress.swift */,
+				E5DE400D2FC5D10000E917AE /* Design */,
+				E5DE400E2FC5D10000E917AE /* Components */,
 				E5DE3F2F2FC5C73800E917AE /* Assets.xcassets */,
 				E5DE3F312FC5C73800E917AE /* Preview Content */,
 			);
@@ -143,6 +174,11 @@
 				E5DE3F2C2FC5C73500E917AE /* ContentView.swift in Sources */,
 				E5DE3F2E2FC5C73500E917AE /* Item.swift in Sources */,
 				E5DE3F2A2FC5C73500E917AE /* LoaderApp.swift in Sources */,
+				E5DE40102FC5D10000E917AE /* LoaderTheme.swift in Sources */,
+				E5DE40122FC5D10000E917AE /* AuroraBackground.swift in Sources */,
+				E5DE40142FC5D10000E917AE /* LoaderRingView.swift in Sources */,
+				E5DE40162FC5D10000E917AE /* LoadItemCard.swift in Sources */,
+				E5DE40182FC5D12000E917AE /* Item+Progress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
